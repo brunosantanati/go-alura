@@ -85,6 +85,9 @@ select * from public.produtos;
 insert into produtos (nome, descricao, preco, quantidade) values
 ('Camiseta', 'Preta', 19, 10),
 ('Fone', 'Muito Bom', 99, 5);
+
+insert into produtos (nome, descricao, preco, quantidade) values
+('Produto Novo', '2.0 mesmo', 199, 1);
 ```
 
 ## Comandos Go
