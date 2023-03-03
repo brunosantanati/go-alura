@@ -4,8 +4,24 @@
 
 [Código fonte original](https://github.com/alura-cursos/web_com_golang)  
 [How to Use the Postgres Docker Official Image](https://www.docker.com/blog/how-to-use-the-postgres-docker-official-image/)
+[Instalação do Go](https://go.dev/doc/install)
+[Instalando múltiplas versões do Go](https://go.dev/doc/manage-install)
+[Pesquisar pacotes Go](https://pkg.go.dev/)
+[Pacote pq](https://pkg.go.dev/github.com/lib/pq#section-readme)
+[GitHub pq](https://github.com/lib/pq)
 
-## Comandos
+## Instalação do Go no Linux
+```
+1-Fazer download do .tar.gz nessa página: https://go.dev/doc/install
+2-Apagar alguma instalação anterior e extrair o arquivo em /usr/local
+rm -rf /usr/local/go && tar -C /usr/local -xzf go1.20.1.linux-amd64.tar.gz
+3-Adicionar pasta do Go no PATH:
+export PATH=$PATH:/usr/local/go/bin
+4-Testar se funcionou:
+go version
+```
+
+## Comandos Docker
 
 ```
 Baixar imagem do Postgres (com e sem tag):
@@ -63,4 +79,13 @@ select * from public.produtos;
 insert into produtos (nome, descricao, preco, quantidade) values
 ('Camiseta', 'Preta', 19, 10),
 ('Fone', 'Muito Bom', 99, 5);
+```
+
+## Comandos Go
+```
+Criar um módulo:
+~/go/src/github.com/brunosantanati/go-alura$ go mod init brunosantana.me/go-alura
+
+Instalar pq:
+~/go/src/github.com/brunosantanati/go-alura$ go get github.com/lib/pq
 ```
