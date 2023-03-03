@@ -54,8 +54,14 @@ docker exec -it some-postgres bash
 ## Comandos Postgres e queries
 
 ```
+Criar um DB:
+CREATE DATABASE alura_loja;
+
 Mostrar DBs:
 postgres=# \l
+
+Conectar a um DB específico:
+postgres=# \c alura_loja
 
 Mostrar Schemas:
 postgres=# \dn
