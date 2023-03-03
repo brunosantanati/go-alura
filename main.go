@@ -1,9 +1,21 @@
 package main
 
 import (
+	"database/sql"
 	"html/template"
 	"net/http"
+
+	_ "github.com/lib/pq"
 )
+
+func conectarComBancoDeDados() *sql.DB {
+	conexao := "user=postgres dbname=alura_loja password=mysecretpassword host=172.17.0.2 sslmode=disable"
+	db, err := sql.Open("postgres", conexao)
+	if err != nil {
+		panic(err.Error())
+	}
+	return db
+}
 
 type Produto struct {
 	Nome       string
@@ -17,6 +29,9 @@ type Produto struct {
 var tmpl = template.Must(template.ParseGlob("templates/*.html"))
 
 func main() {
+	db := conectarComBancoDeDados()
+	defer db.Close()
+
 	http.HandleFunc("/", Index)
 	http.ListenAndServe(":8000", nil)
 }
