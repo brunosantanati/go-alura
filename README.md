@@ -47,6 +47,7 @@ Outros comandos úteis:
 docker images
 docker ps -a
 docker stop some-postgres
+docker start some-postgres
 docker rm some-postgres
 docker exec -it some-postgres bash
 ```
