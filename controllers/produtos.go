@@ -47,3 +47,9 @@ func Delete(w http.ResponseWriter, r *http.Request) {
 	models.DeletaProduto(idDoProduto)
 	http.Redirect(w, r, "/", 301)
 }
+
+func Edit(w http.ResponseWriter, r *http.Request) {
+	idDoProduto := r.URL.Query().Get("id")
+	produto := models.EditaProduto(idDoProduto)
+	tmpl.ExecuteTemplate(w, "Edit", produto)
+}
