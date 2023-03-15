@@ -3,12 +3,12 @@
 ## Links
 
 [Código fonte original](https://github.com/alura-cursos/web_com_golang)  
-[How to Use the Postgres Docker Official Image](https://www.docker.com/blog/how-to-use-the-postgres-docker-official-image/)
-[Instalação do Go](https://go.dev/doc/install)
-[Instalando múltiplas versões do Go](https://go.dev/doc/manage-install)
-[Pesquisar pacotes Go](https://pkg.go.dev/)
-[Pacote pq](https://pkg.go.dev/github.com/lib/pq#section-readme)
-[GitHub pq](https://github.com/lib/pq)
+[How to Use the Postgres Docker Official Image](https://www.docker.com/blog/how-to-use-the-postgres-docker-official-image/)  
+[Instalação do Go](https://go.dev/doc/install)  
+[Instalando múltiplas versões do Go](https://go.dev/doc/manage-install)  
+[Pesquisar pacotes Go](https://pkg.go.dev/)  
+[Pacote pq](https://pkg.go.dev/github.com/lib/pq#section-readme)  
+[GitHub pq](https://github.com/lib/pq)  
 
 ## Instalação do Go no Linux
 ```
